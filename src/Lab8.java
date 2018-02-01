@@ -39,9 +39,8 @@ public class Lab8 {
 			sluggingPercentage = BigDecimal.valueOf(sluggingPercentage).setScale(3, RoundingMode.HALF_UP).doubleValue();
 
 			//print the final output and determine whether or not the user wants to keep going
-			System.out.println(sluggingPercentage);
-			System.out.println("This player had a batting average of " + battingAverage + "% and a slugging percentage of " + sluggingPercentage + "%");
-			keepGoing = Validator.yesOrNo(scan, "Would you like to continue with another player? y/n");
+			System.out.println("This player had a batting average of " + battingAverage + " and a slugging percentage of " + sluggingPercentage + "%");
+			keepGoing = Validator.yesOrNo(scan, "Would you like to continue with another player? y/n \n");
 		}
 		System.out.println("Goodbye!");
 	}
