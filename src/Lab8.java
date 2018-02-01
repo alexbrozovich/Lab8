@@ -1,5 +1,4 @@
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.Scanner;
 
@@ -37,7 +36,7 @@ public class Lab8 {
 			battingAverage = BigDecimal.valueOf(battingAverage).setScale(3, RoundingMode.HALF_UP).doubleValue();
 			double sluggingPercentage = totalBasesEarned / basesEarned.length;
 			sluggingPercentage *= 100;
-			sluggingPercentage = BigDecimal.valueOf(sluggingPercentage).setScale(3, RoundingMode.CEILING).doubleValue();
+			sluggingPercentage = BigDecimal.valueOf(sluggingPercentage).setScale(3, RoundingMode.HALF_UP).doubleValue();
 
 			//print the final output and determine whether or not the user wants to keep going
 			System.out.println(sluggingPercentage);
